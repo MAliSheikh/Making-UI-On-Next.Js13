@@ -1,9 +1,14 @@
 import Image from 'next/image'
+import { Button } from "../../components/ui/button"
+import { Mail } from "lucide-react"
+
 
 export default function Home() {
   return (
-    <h1 className="scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl text-red-500">
-    My name is Ali
-  </h1>
+    <div>
+      <h1>Home</h1>
+      <Button> <Mail className="mr-2 h-4 w-4" /> Login with Email</Button>
+
+    </div>
   )
 }
